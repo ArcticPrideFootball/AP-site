@@ -22,19 +22,6 @@
       background: var(--bg);
       color: var(--ink);
       font-family: 'Montserrat', sans-serif;
-      padding-top: 20px;
-    }
-
-    /* --- Logo --- */
-    .top-logo {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 100;
-    }
-
-    .top-logo img {
-      width: 80px;
     }
 
     /* --- Hero Section --- */
@@ -60,6 +47,7 @@
     .hero-content {
       position: relative;
       max-width: 800px;
+      margin-top: clamp(140px, 22vh, 260px);
     }
 
     .hero h1 {
@@ -130,38 +118,38 @@
       color: #e0e0e0;
       margin-bottom: 20px;
     }
+
+    .logo {
+      width: 120px;
+      display: block;
+      margin: 0 auto 20px;
+    }
   </style>
 </head>
 
 <body>
-  <!-- LOGO -->
-  <div class="top-logo">
-    <img src="logo.png" alt="Arctic Pride Logo">
-  </div>
-
+    <div class="hero-content">
+      <img class="logo" src="logo.png" alt="Arctic Pride Logo">
   <!-- HERO -->
   <div class="hero" style="background-image: url('hero.jpg');">
     <div class="overlay"></div>
-    <div class="hero-content">
+
       <h1>ARCTIC PRIDE</h1>
       <h2>Edmonton's WWCFL Football Team</h2>
+
+      <div class="buttons">
+        <a href="#join" class="btn primary">Join Us</a>
+        <a href="#schedule" class="btn">View Schedule</a>
+      </div>
     </div>
   </div>
-
-  <!-- CTA BUTTONS -->
-  <section id="cta">
-    <div class="buttons">
-      <a href="#join" class="btn primary">Join Us</a>
-      <a href="#schedule" class="btn">View Schedule</a>
-    </div>
-  </section>
 
   <!-- ABOUT -->
   <section id="about">
     <h2 class="section-title">About Us</h2>
     <p>
-      Arctic Pride is Edmonton's WWCFL tackle football team.  
-      We compete in the Western Women's Canadian Football League with athletes 16+ of all experience levels.
+      Arctic Pride is Edmonton’s WWCFL tackle football team.  
+      We compete in the Western Women’s Canadian Football League with athletes 16+ of all experience levels.
     </p>
   </section>
 
